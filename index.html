@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<script src="main.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Javascript Web Output #2</h1>
+	<form id="userForm">
+		<label for="firstName">First Name:</label>
+		<input type="text" id="firstName" name="firstName"><br>
+
+		<label for="middleName">Middle Name:</label>
+		<input type="text" id="middleName" name="middleName"><br>
+
+		<label for="lastName">Last Name:</label>
+		<input type="text" id="lastName" name="lastName"><br>
+
+		<label for="age">Age:</label>
+		<input type="number" id="age" name="age"><br>
+		<br>
+		<button type="button" onclick="submitForm()">Insert</button>
+        <button type="button" onclick="clearForm()">Clear Text</button>
+	</form>
+
+	<fieldset>
+		<legend>Records</legend>
+		<div id="noRecord">No records</div>
+		<table id="userTable" style="display:none;">
+			<tr>
+				<th >First Name</th>
+				<th>Middle Name</th>
+				<th>Last Name</th>
+				<th>Age</th>
+				<th>Actions</th>
+			</tr>
+		</table>
+	</fieldset>
+
+	<button type="button" onclick="clearTable()">Clear Records</button>
+
+</body>
+</html>
